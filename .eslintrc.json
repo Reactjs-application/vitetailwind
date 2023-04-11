@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "project": "./jsconfig.json",
+        "sourceType": "module",
+        "allowImportExportEverywhere": true
+    },
+    "plugins": ["react"],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "import/prefer-default-export": 0,
+        "max-len": ["error", { "code": 100, "comments": 120 }],
+        "object-curly-newline": ["error", { "consistent": true }],
+        "react/destructuring-assignment": 0,
+        "react/function-component-definition": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/require-default-props": 0
+    }
+}
